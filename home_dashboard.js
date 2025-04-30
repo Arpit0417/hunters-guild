@@ -40,10 +40,6 @@ function isMiniQuestDoneToday() {
   const today = new Date().toDateString();
   return hunterData.miniQuestStatus?.date === today && hunterData.miniQuestStatus.done;
 }
-function goHome() {
-  window.location.href = "index.html";
-}
-
 
 function completeMiniQuest() {
   const today = new Date().toDateString();
