@@ -101,3 +101,28 @@ main {
   box-shadow: 0 0 20px #00FF88;
 }
 
+.back-btn-wrapper {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.home-button {
+  background-color: #00C2FF;
+  color: #0D0D0D;
+  font-weight: bold;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 15px #00C2FF;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 80%;
+  max-width: 250px;
+}
+
+.home-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #00C2FF;
+}
