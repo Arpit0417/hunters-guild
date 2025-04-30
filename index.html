@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hunter's Guild | Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+
+</head>
+<body>
+
+<header>
+  <h1 class="guild-title">🏹 HUNTER'S GUILD 🛡️</h1>
+</header>
+
+<main>
+  <section class="info-card">
+    <h2 id="current-quest">No Active Quest</h2>
+    <p id="hunter-level">Level 1</p>
+    <p id="xp-status">XP: 0</p>
+    <p id="current-day">Day: 1</p>
+  </section>
+
+  <div class="button-container">
+    <button onclick="startQuest()">🏹 Start Quest</button>
+    <button onclick="goDashboard()">📈 Hunter Dashboard</button>
+    <button onclick="goProfile()">📜 Hunter Profile</button>
+  </div>
+</main>
+<!-- Admin Reset Button -->
+<div class="reset-container">
+  <button onclick="showResetPopup()">🔧 Reset Game</button>
+</div>
+
+<!-- Reset Password Popup -->
+<div id="reset-popup" class="reset-popup hidden">
+  <div class="popup-content">
+    <h3>Enter Admin Password</h3>
+    <input type="password" id="reset-password" placeholder="Enter Password" />
+    <div class="popup-buttons">
+      <button onclick="confirmReset()">✅ Confirm</button>
+      <button onclick="closeResetPopup()">❌ Cancel</button>
+    </div>
+    <p id="reset-msg" class="reset-msg"></p>
+  </div>
+</div>
+
+<!-- Transition Overlay -->
+<div class="transition-overlay" id="transition-overlay">
+  <div class="transition-ring"></div>
+</div>
+
+<script src="index.js" defer></script>
+<script src="hunter_save.js" defer></script>
+
+</body>
+</html>

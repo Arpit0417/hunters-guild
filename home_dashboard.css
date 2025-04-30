@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0D0D0D;
+  color: #EEEEEE;
+  font-family: 'Oxanium', sans-serif;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #00C2FF;
+  text-shadow: 0 0 10px #00C2FF;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.status-box {
+  background-color: #1A1A1A;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 0 15px #00C2FF;
+}
+
+.xp-bar-container {
+  margin-top: 20px;
+  background-color: #333;
+  border: 1px solid #00C2FF;
+  border-radius: 8px;
+  height: 20px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.xp-bar {
+  height: 100%;
+  background: linear-gradient(to right, #00C2FF, #4DD0E1);
+  width: 0%;
+  transition: width 1.5s ease-in-out;
+  box-shadow: 0 0 10px #00C2FF;
+}
+
+#xp-label {
+  margin-top: 10px;
+  color: #FFD700;
+  font-weight: bold;
+}
+
+.mini-quest-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.mini-quest-section h3 {
+  color: #4DD0E1;
+  margin-bottom: 10px;
+}
+
+.mini-quest-section button {
+  background-color: #00C2FF;
+  color: #0D0D0D;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 25px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 10px #00C2FF;
+  margin-top: 10px;
+}
+
+.mini-quest-section button:disabled {
+  background-color: #444;
+  color: #999;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+#mini-toast {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #00FF88;
+  color: #0D0D0D;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  display: none;
+  box-shadow: 0 0 20px #00FF88;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home | Hunter's Guild</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="home_dashboard.css" />
+</head>
+<body>
+
+<header>
+  <h1 class="title">🏹 HUNTER'S GUILD DASHBOARD</h1>
+</header>
+
+<main>
+  <div class="status-box">
+    <h2>Status</h2>
+    <p>Hunter Level: <span id="level">--</span></p>
+    <p>Current Quest: <span id="quest-name">--</span></p>
+    <p>Mini Quest: <span id="mini-quest">--</span></p>
+    <p>Total XP: <span id="xp-count">--</span></p>
+
+    <div class="xp-bar-container">
+      <div id="xp-bar" class="xp-bar"></div>
+    </div>
+    <p id="xp-label">XP: -- / --</p>
+
+    <!-- Mini Quest Area -->
+    <div class="mini-quest-section">
+      <h3>Mini Quest: <span id="mini-quest-name">--</span></h3>
+      <button id="mini-quest-btn" onclick="completeMiniQuest()">Mark as Done ✅</button>
+      <p id="mini-quest-status">Status: --</p>
+    </div>
+  </div>
+</main>
+
+<!-- Toast for XP reward -->
+<div id="mini-toast">+10 XP for completing Mini Quest!</div>
+
+<script src="hunter_save.js" defer></script>
+<script src="home_dashboard.js" defer></script>
+
+</body>
+</html>

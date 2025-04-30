@@ -1,0 +1,217 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0D0D0D;
+    color: #EEEEEE;
+    font-family: 'Oxanium', sans-serif;
+    min-height: 100vh;
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .guild-title {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2.5rem;
+    color: #00C2FF;
+    text-shadow: 0 0 10px #00C2FF;
+  }
+  
+  main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .info-card {
+    background-color: rgba(26, 26, 26, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 0 10px #118AB2;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .button-container button {
+    padding: 15px 30px;
+    background-color: #00C2FF;
+    color: #0D0D0D;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00C2FF;
+    transition: 0.3s ease;
+  }
+  
+  .button-container button:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Transition Overlay */
+  .transition-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0D0D0D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+  }
+  
+  .transition-overlay.show {
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  .transition-ring {
+    width: 100px;
+    height: 100px;
+    border: 5px solid #00C2FF;
+    border-top: 5px solid transparent;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  /* XP Floating */
+#xp-floating {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: #FFD700;
+    font-weight: bold;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 999;
+  }
+  
+  #xp-floating.show {
+    opacity: 1;
+  }
+  
+  #levelup-popup {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #0D0D0D;
+    border: 2px solid #FFD700;
+    padding: 20px 40px;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #FFD700;
+    border-radius: 10px;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+  }
+  
+  #levelup-popup.show {
+    opacity: 1;
+  }
+  .reset-container {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .reset-container button {
+    background: none;
+    border: none;
+    color: #00C2FF;
+    text-shadow: 0 0 10px #00C2FF;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-style: italic;
+  }
+  
+  .reset-popup {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .popup-content {
+    background-color: #1A1A1A;
+    padding: 30px 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px #00C2FF;
+    color: #EEEEEE;
+  }
+  
+  .popup-content input {
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+  }
+  
+  .popup-buttons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .popup-buttons button {
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .popup-buttons button:first-child {
+    background-color: #00FF88;
+    color: #0D0D0D;
+  }
+  
+  .popup-buttons button:last-child {
+    background-color: #FF3C38;
+    color: #fff;
+  }
+  
+  .reset-msg {
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  

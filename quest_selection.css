@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0D0D0D;
+    color: #EEEEEE;
+    font-family: 'Oxanium', sans-serif;
+    min-height: 100vh;
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .guild-title {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2.5rem;
+    color: #00C2FF;
+    text-shadow: 0 0 10px #00C2FF;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .quest-section {
+    margin-bottom: 40px;
+  }
+  
+  h2 {
+    font-family: 'Rajdhani', sans-serif;
+    color: #4DD0E1;
+    margin-bottom: 10px;
+  }
+  
+  .quest-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  
+  .quest-card {
+    background-color: rgba(26, 26, 26, 0.8);
+    border: 2px solid #118AB2;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+    position: relative;
+  }
+  
+  .quest-card:hover {
+    background-color: rgba(17, 138, 178, 0.2);
+  }
+  
+  .quest-card.selected {
+    border-color: #00C2FF;
+    box-shadow: 0 0 20px #00C2FF;
+  }
+  
+  .preview-text {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    font-size: 0.9rem;
+    color: #BBBBBB;
+    margin-top: 10px;
+    transition: max-height 1.2s ease-in-out, opacity 1.2s ease-in-out;
+  }
+  
+  .quest-card:hover .preview-text {
+    max-height: 100px;
+    opacity: 1;
+  }
+  
+  .confirm-button {
+    background-color: #00C2FF;
+    color: #0D0D0D;
+    font-weight: bold;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    width: 100%;
+    cursor: pointer;
+    box-shadow: 0 0 15px #00C2FF;
+    margin-top: 30px;
+  }
+  
+  .confirm-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #00C2FF;
+  }
+  
+  #success-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    background-color: #0D0D0D;
+    color: #00FF88;
+    padding: 30px 50px;
+    border: 2px solid #00FF88;
+    border-radius: 12px;
+    box-shadow: 0 0 30px #00FF88;
+    font-size: 2rem;
+    text-align: center;
+    z-index: 999;
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+  
+  #success-popup.show {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .hidden {
+    display: none;
+  }
+  

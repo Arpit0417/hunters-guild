@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quest Selection | Hunter's Guild</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="quest_selection.css" />
+</head>
+<body>
+  <header>
+    <h1 class="guild-title">SELECT YOUR QUESTS 🛡️</h1>
+  </header>
+
+  <main>
+    <section class="quest-section">
+      <h2>Main Quest (Compulsory)</h2>
+      <div class="quest-grid" id="main-quests"></div>
+    </section>
+
+    <section class="quest-section">
+      <h2>Mini Quest (Optional)</h2>
+      <div class="quest-grid" id="mini-quests"></div>
+    </section>
+
+    <button class="confirm-button" onclick="confirmQuests()">Confirm Quests ✅</button>
+  </main>
+
+  <div id="success-popup" class="hidden">
+    <div class="popup-content">Quest Accepted ✅</div>
+  </div>
+
+  <script src="hunter_save.js" defer></script>
+  <script src="quest_selection.js" defer></script>
+</body>
+</html>

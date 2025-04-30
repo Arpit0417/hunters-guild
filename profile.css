@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0D0D0D;
+    color: #EEEEEE;
+    font-family: 'Oxanium', sans-serif;
+    min-height: 100vh;
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .profile-title {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2.5rem;
+    color: #00C2FF;
+    text-shadow: 0 0 10px #00C2FF;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .profile-card {
+    background-color: rgba(26, 26, 26, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #00C2FF;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  .profile-card h2, .profile-card p {
+    margin: 15px 0;
+  }
+  
+  .button-container {
+    margin-top: 30px;
+  }
+  
+  .button-container button {
+    padding: 12px 30px;
+    background-color: #00C2FF;
+    color: #0D0D0D;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00C2FF;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .button-container button:hover {
+    transform: scale(1.05);
+  }
+  

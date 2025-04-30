@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Today's Workout | Hunter's Guild</title>
+  <link rel="stylesheet" href="start_day1.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <h1 class="guild-title">🏹 Today's Workout</h1>
+</header>
+
+<main id="main-content">
+  <!-- Exercise Content Will Be Loaded Here Dynamically -->
+</main>
+
+<!-- XP Floating -->
+<div id="xp-floating" class="hidden">+50 XP</div>
+
+<!-- Level Up Popup -->
+<div id="levelup-popup" class="hidden">
+  🎉 LEVEL UP! 🎉 <br>
+  New Rank: <span id="new-rank"></span>
+</div>
+
+<!-- Transition Overlay -->
+<div class="transition-overlay" id="transition-overlay">
+  <div class="transition-ring"></div>
+</div>
+<div id="levelup-popup" class="hidden">
+  LEVEL UP! ⚡<br>
+  New Rank: <span id="new-rank">Rookie Hunter</span> 🛡️
+</div>
+
+
+<!-- Success Sound -->
+<audio id="success-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-achievement-bell-600.mp3"></audio>
+
+<script src="hunter_save.js" defer></script>
+<script src="day_workouts.js" defer></script>
+<script src="start_workout.js" defer></script>
+
+</body>
+</html>

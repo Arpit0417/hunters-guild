@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hunter Profile | Hunter's Guild</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+<header>
+  <h1 class="profile-title">🏹 HUNTER PROFILE 🛡️</h1>
+</header>
+
+<main>
+  <section class="profile-card">
+    <h2>Name: <span id="hunter-name">Unknown Hunter</span></h2>
+    <p>Level: <span id="hunter-level">--</span></p>
+    <p>Total XP: <span id="hunter-xp">--</span></p>
+    <p>Quests Completed: <span id="quests-completed">--</span></p>
+    <p>Current Title: <span id="hunter-title">--</span></p>
+  </section>
+
+  <div class="button-container">
+    <button onclick="goHome()">🏠 Back to Home</button>
+  </div>
+</main>
+
+<script src="hunter_save.js" defer></script>
+<script src="profile.js" defer></script>
+
+</body>
+</html>

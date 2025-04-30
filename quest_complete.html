@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quest Complete | Hunter's Guild</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="quest_complete.css">
+</head>
+<body>
+
+<div class="quest-complete-screen">
+  <h1>🎉 QUEST COMPLETE! 🛡️</h1>
+  <p class="awaken-text">🔥 New Strength Awakened 🔥</p>
+  <p class="rest-text">The Hunter must now rest...<br> A new quest will be available after 24 hours.</p>
+
+  <div id="cooldown-timer">24:00:00</div>
+
+  <div class="buttons">
+    <button onclick="goHome()">🏠 Home</button>
+    <button onclick="goProfile()">📜 Profile</button>
+  </div>
+</div>
+
+<script src="cooldown_system.js" defer></script>
+
+</body>
+</html>
