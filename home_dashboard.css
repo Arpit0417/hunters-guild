@@ -100,3 +100,20 @@ main {
   display: none;
   box-shadow: 0 0 20px #00FF88;
 }
+.home-button {
+  margin-top: 30px;
+  background-color: #00C2FF;
+  color: #0D0D0D;
+  font-weight: bold;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 15px #00C2FF;
+  transition: transform 0.3s ease;
+}
+
+.home-button:hover {
+  transform: scale(1.05);
+}
