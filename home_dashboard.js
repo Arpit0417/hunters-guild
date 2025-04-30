@@ -62,6 +62,9 @@ function completeMiniQuest() {
   miniToast.style.display = "block";
   setTimeout(() => (miniToast.style.display = "none"), 2000);
 }
+function goHome() {
+  window.location.href = "index.html";
+}
 
 // Load mini quest status
 if (isMiniQuestDoneToday()) {
